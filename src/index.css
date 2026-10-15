@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'EB Garamond', Georgia, serif;
+    background-color: #F4EFE6;
+    color: #2C221E;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #F4EFE6;
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* Custom scrollbar in antique brass */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #E8DEC8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #B89758;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1F3D2B;
+  }
+}
+
+/* Editorial Drop-Cap */
+.drop-cap::first-letter {
+  float: left;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3.75rem;
+  line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  color: #1F3D2B;
+  font-weight: 700;
+}
+
+/* Double Hairline Book Border */
+.border-double-hairline {
+  border: 1px solid #B89758;
+  position: relative;
+}
+.border-double-hairline::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(184, 151, 88, 0.45);
+  pointer-events: none;
+}
+
+/* Parchment Texture Gradient */
+.bg-parchment-texture {
+  background-color: #F4EFE6;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(184, 151, 88, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(31, 61, 43, 0.04) 0%, transparent 40%);
+}
+
+.bg-leather-texture {
+  background-color: #23170F;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(184, 151, 88, 0.12) 0%, transparent 60%),
+    linear-gradient(180deg, #23170F 0%, #160E09 100%);
+}
