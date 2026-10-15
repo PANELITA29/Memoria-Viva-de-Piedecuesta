@@ -6,15 +6,16 @@
   html {
     scroll-behavior: smooth;
     font-family: 'EB Garamond', Georgia, serif;
-    background-color: #F4EFE6;
-    color: #2C221E;
+    background-color: #F3EBDD;
+    color: #3D2D24;
   }
 
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #F4EFE6;
+    background-color: #F3EBDD;
+    color: #3D2D24;
   }
 
   #root {
@@ -33,7 +34,7 @@
     background: #E8DEC8;
   }
   ::-webkit-scrollbar-thumb {
-    background: #B89758;
+    background: #B39352;
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
@@ -54,33 +55,26 @@
   font-weight: 700;
 }
 
-/* Double Hairline Book Border */
-.border-double-hairline {
-  border: 1px solid #B89758;
+/* Double Hairline Ornamental Book Border */
+.border-double-filete {
+  border: 1px solid #B39352;
   position: relative;
 }
-.border-double-hairline::before {
+.border-double-filete::before {
   content: '';
   position: absolute;
   top: 3px;
   left: 3px;
   right: 3px;
   bottom: 3px;
-  border: 1px solid rgba(184, 151, 88, 0.45);
+  border: 1px solid rgba(179, 147, 82, 0.45);
   pointer-events: none;
 }
 
 /* Parchment Texture Gradient */
 .bg-parchment-texture {
-  background-color: #F4EFE6;
+  background-color: #F3EBDD;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(184, 151, 88, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 10% 20%, rgba(179, 147, 82, 0.06) 0%, transparent 40%),
     radial-gradient(circle at 90% 80%, rgba(31, 61, 43, 0.04) 0%, transparent 40%);
-}
-
-.bg-leather-texture {
-  background-color: #23170F;
-  background-image: 
-    radial-gradient(circle at 50% 0%, rgba(184, 151, 88, 0.12) 0%, transparent 60%),
-    linear-gradient(180deg, #23170F 0%, #160E09 100%);
 }

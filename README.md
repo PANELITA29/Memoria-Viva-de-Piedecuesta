@@ -2,14 +2,16 @@
 
 Investigación histórica y patrimonial sobre el paisaje agroindustrial panelero del Valle de Guatiguará y la trascendencia social y humanitaria de la primigenia Funeraria David Gómez Barrera en Piedecuesta, Santander.
 
-Proyecto escolar de Ciencias Sociales (Grado 11°) desarrollado bajo la metodología de Aprendizaje Basado en Problemas (ABP) en el Colegio Municipal Carlos Vicente Rey, asesorado por el docente Deiby Duvan Galeano Mendoza e inspirado en la historiografía del Dr. Luis Rubén Pérez Pinzón (Universidad Industrial de Santander).
+Basado en la obra historiográfica del Dr. Luis Rubén Pérez Pinzón (Universidad Industrial de Santander) y la investigación del Colegio Municipal Carlos Vicente Rey (Grado 11° | Ciencias Sociales), bajo la asesoría del docente Deiby Duvan Galeano Mendoza.
 
-## Contenido
+## Estructura del Tomo Histórico
 
-- **Capítulo I: El Valle de la Caña Dulce:** El paisaje agrario de Guatiguará, el ciclo técnico tradicional de la molienda (corte, molienda, clarificación con balso/cadillo, punteo y gaverado) y el análisis histórico de la pérdida de trapiches frente a la conurbación metropolitana.
-- **Capítulo II: Más Allá del Duelo:** La figura de Don David Gómez Barrera (Carrera 8 #9-01), la humanización comunitaria del duelo y la posterior adopción del nombre de San Francisco Javier en consonancia con la parroquia fundacional de 1776.
-- **Capítulo III: Expediente de Campo y Memoria Oral:** Entrevistas y declaraciones de campo con custodios de la memoria local (Don Ramiro y Doña Sofía), acompañadas de una síntesis sobre el riesgo de privatización del patrimonio.
-- **Colofón & Fuentes:** Ficha técnica de la investigación y referencias archivísticas.
+1. **Portada (#inicio):** Frontispicio conmemorativo, cintillo institucional y perspectiva topográfica del Valle de Guatiguará y las haciendas paneleras.
+2. **Capítulo I: La Paradoja del Azúcar en Piedecuesta (#origen-azucar):** La sobreproducción en Guatiguará y la panela como solución forzosa de transporte y conservación, junto con los 5 pasos del trapiche tradicional (corte, molienda, clarificación con balso/cadillo, punteo al fuego y gaverado).
+3. **Capítulo II: La Anatomía de la Crisis Panelera (#decadencia-trapiches):** Análisis interactivo de los cuatro factores de desaparición (urbanización acelerada, decretos sanitarios e INVIMA, cambio en el consumo de aguapanela y éxodo laboral hacia fabriquines de tabaco).
+4. **Capítulo III: Más Allá del Duelo (#funeraria-gomez):** Ficha patrimonial de la Carrera 8 #9-01, la humanización solidaria del duelo por Don David Gómez Barrera y la posterior transición identitaria a San Francisco Javier.
+5. **Capítulo IV: Expediente de Campo y Archivo Oral (#testimonios):** Declaraciones de historia oral del 18 de mayo de 2026 (Don Ramiro y Doña Sofía) y tesis crítica sobre el riesgo de la privatización de la memoria.
+6. **Colofón & Créditos (#creditos):** Datos institucionales y fuentes primarias y secundarias.
 
 ## Tecnologías
 

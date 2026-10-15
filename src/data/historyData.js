@@ -1,14 +1,13 @@
-// Centralización de todos los datos históricos, testimonios y metadatos del proyecto ABP
+// Centralización de la investigación histórica sobre Piedecuesta (1776–2026)
 export const historyData = {
   projectMeta: {
     institution: "Colegio Municipal Carlos Vicente Rey",
-    grade: "Grado 11° · Ciencias Sociales",
+    grade: "Grado 11° | Ciencias Sociales",
     municipality: "Piedecuesta, Santander",
     advisor: "Deiby Duvan Galeano Mendoza",
     period: "Investigación ABP 2026",
-    title: "Historias de Piedecuesta (1776–2026): Cañaduzales, Oficios y el Olvido",
-    subtitle: "Investigación sobre el Valle de Guatiguará y la trascendencia patrimonial de la Funeraria David Gómez Barrera",
-    anniversary: "250 Años de Memoria Viva (1776–2026)",
+    title: "Historias de Piedecuesta (1776–2026)",
+    subtitle: "De la Vega de la Caña Dulce a los Silencios de la Memoria Local",
     mainHistorian: "Dr. Luis Rubén Pérez Pinzón (Universidad Industrial de Santander)",
   },
 
@@ -20,217 +19,151 @@ export const historyData = {
     funerariaFachada: "https://lh3.googleusercontent.com/aida-public/AB6AXuCbkhCXshpTgKTInvBvfpThnQN_mmcEGbXcUS6hHkT3F21f9X16v7a1quXWUxGVK2WDNQwg5umEDLGVB31ihMaxoEQ0Dv75S-BV-Obd5IXpD5H3jsGQbvBfXGPjwpfg1wDZ1VARXxBFXU1NMMRCJQOSy7vuFghxG7ipSob5t4X8cVynHFMdrcZFtnlC4q3exH9uWztjsFd0maU24LglXK_5y0_3kO4HRgc7oQdThMTGHz0pyFve6MI",
   },
 
-  trapiches: {
-    chapterNumber: "Capítulo I",
-    badge: "Tomo I · Crónica Rural de Santander",
-    title: "El Valle de la Caña Dulce",
-    subtitle: "El Paisaje Agroindustrial: Cañaduzales y Trapiches de Guatiguará",
-    introText: [
-      "El fértil valle de Guatiguará y la vega ribereña de Piedecuesta se erigieron, desde el florecimiento virreinal del siglo XVIII y la consolidación de la República, en el epicentro vital de la caña dulce en la provincia de Soto. Regadas con abundancia por las aguas del Río de Oro y el Río Manco, estas tierras gozaban de un microclima térmico singular (23°C promedio y 1.005 m.s.n.m.), propiciando en los cañaduzales una concentración sacarina inigualable en el nororiente colombiano.",
-      "La hacienda panelera de Piedecuesta no operaba como una mera factoría agrícola; constituía una célula social y comunitaria completa. Las crónicas sistematizadas por el historiador Luis Rubén Pérez Pinzón documentan cómo las licencias de molienda marcaban las festividades locales, el calendario litúrgico y la economía familiar de cientos de arrieros, cortadores y paileros que forjaron la identidad de la Villa de San Carlos.",
-    ],
-    historicalQuote: {
-      text: "Al despuntar el alba sobre los cerros tutelares de La Cantera, el bramido hondo de las calderas y el chirrido de las masas de bronce anunciaban que el zumo de la tierra comenzaba a correr hacia los fondos de cobre, vistiendo de aroma a melaza cada rincón del pueblo.",
-      source: "Apuntes del Archivo Notarial Municipal de Piedecuesta, 1894",
-    },
-    topographyStats: [
-      { label: "Cota Topográfica", value: "1.005 m.s.n.m." },
-      { label: "Cuencas de Riego", value: "Río de Oro y Río Manco" },
-      { label: "Rendimiento Tradicional", value: "80 a 120 atados / molienda" },
-      { label: "Tracción Operativa", value: "3 yuntas de bueyes o mulas" },
-    ],
+  capitulo1: {
+    id: "origen-azucar",
+    number: "Capítulo I",
+    title: "La Paradoja del Azúcar en Piedecuesta",
+    subtitle: "La Sobreproducción y la Solución Panelera",
+    thesisParagraph1: "El fértil Valle de Guatiguará y la cuenca hídrica del Río de Oro generaban una saturación masiva de jugo de caña dulce en cada zafra virreinal y republicana. Sin embargo, este prodigio agrícola encerraba un obstáculo logístico insalvable: el caldo crudo fermentaba velozmente bajo el calor andino antes de poder ser transportado por las agrestes trochas de arriería hacia Pamplona, Girón o el Socorro.",
+    thesisParagraph2: "La transformación forzosa: La panela no nació como un capricho gastronómico, sino como la única tecnología disponible en los siglos XVIII y XIX para deshidratar, compactar y conservar los excedentes de sacarosa en bloques sólidos de alta durabilidad, inmunes al deterioro del camino y convertidos en la moneda de cambio de la economía campesina piedecuestana.",
     steps: [
       {
-        id: 1,
-        number: "01",
+        number: "1",
         title: "Corte y Apronte",
-        subtitle: "Cosecha en menguante y arriería de montaña",
-        workerRole: "El Cortador & Arriero Mayor",
-        tools: "Machete rastrojero de 22\", enjalmas y canastos de bejuco",
-        description: "Selección rigurosa y corte manual a ras de cepa tras 12 a 14 meses de maduración biológica en la vega aluvial. Los manojos atados se cargaban en recuas de mulas que descendían por senderos pedregosos hasta la ramada techada del trapiche antes de que el sol del mediodía secara la caña.",
-        archiveNote: "Folio 82 de Hacienda El Trapiche: Prohibido cortar en luna tierna para salvaguardar el contenido de sacarosa y evitar la fermentación prematura del jugo virgen.",
+        desc: "Caña madura de 12 meses cosechada a ras de suelo y trasladada en recuas de mulas desde los bancales de Guatiguará hasta la ramada techada del trapiche.",
+        detail: "La selección manual en fase lunar menguante garantizaba la concentración idónea de sacarosa antes de que el sol evaporara los jugos de la cepa."
       },
       {
-        id: 2,
-        number: "02",
+        number: "2",
         title: "Molienda y Extracción",
-        subtitle: "Engranajes de guayacán y tracción animal/hidráulica",
-        workerRole: "El Metedor de Caña",
-        tools: "Masas cilíndricas de guayacán / hierro colado y canaletas de cedro",
-        description: "El giro incesante de las yuntas alrededor del eje central hacía crujir los rodillos donde el metedor introducía caña por caña con destreza milimétrica. El primer zumo, conocido como 'guarapo virgen', fluía por canales de madera hacia las piletas de sedimentación previa decantación de sólidos gruesos.",
-        archiveNote: "Registro Técnico 1888: Velocidad constante de 3 vueltas por minuto para garantizar un rendimiento extractivo superior al 60% en peso vegetal.",
+        desc: "Extracción continua del guarapo virgen en molinos de dos o tres masas cilíndricas mediante tracción animal (bueyes o mulas) o ruedas hidráulicas.",
+        detail: "El metedor de caña alimentaba los rodillos de guayacán o hierro colado mientras el zumo corría por canales de madera hacia las piletas de decantación."
       },
       {
-        id: 3,
-        number: "03",
-        title: "Clarificación Natural",
-        subtitle: "Depuración botánica con balso blanco y cadillo",
-        workerRole: "El Relimpiador / Maestro Descachazador",
-        tools: "Espumaderas de malla de alambre y palas perforadas de cobre",
-        description: "Al verterse el caldo en los fondos de cobre a fuego vivo, el relimpiador incorporaba el mucílago extraído de cortezas de árboles nativos (balso blanco y cadillo). Esta emulsión vegetal atrapaba por coagulación térmica las impurezas y bagacillo fino, flotando como una espesa cachaza que se retiraba sin alterar la pureza del azúcar.",
-        archiveNote: "Práctica ancestral santandereana: Ningún clarificante químico sintético tocaba las pailas tradicionales de Guatiguará.",
+        number: "3",
+        title: "Clarificación Botánica",
+        desc: "Limpieza natural del guarapo hirviente usando baba o mucílago de cortezas de árboles nativos (balso y cadillo) por la destreza del maestro relimpiador.",
+        detail: "Las impurezas y el bagacillo coagulaban térmicamente flotando hacia la superficie, donde se retiraban con espumaderas sin recurrir a ningún químico sintético."
       },
       {
-        id: 4,
-        number: "04",
+        number: "4",
         title: "Punteo al Fuego",
-        subtitle: "Ebullición con biomasa y vapor caramelizado",
-        workerRole: "El Maestro Fogonero & Pailero",
-        tools: "Horno de tiro corrido alimentado de bagazo seco y remillones",
-        description: "La combustión ininterrumpida de bagazo seco en la hornalla inferior elevaba la temperatura a más de 118°C. El caldo concentraba sus sólidos disueltos pasando de melote a miel gruesa. El maestro determinaba 'el punto' tomando muestras en el remillón y enfriándolas al aire para comprobar la cristalización idónea.",
-        archiveNote: "Balance energético: El bagazo residual de la molienda anterior constituía el 100% del combustible térmico del ingenio, cerrando un ciclo ecológico perfecto.",
+        desc: "Evaporación y concentración intensiva en una batería escalonada de pailas al calor ininterrumpido del bagazo seco.",
+        detail: "El maestro pailero evaluaba la hebra de la miel a más de 118°C, vigilando que la biomasa residual sostuviera la llama viva del tiro corrido."
       },
       {
-        id: 5,
-        number: "05",
-        title: "Cristalización y Gaverado",
-        subtitle: "Batido enérgico en canoas y moldeo de madera",
-        workerRole: "El Gavero & Empacador Tradicional",
-        tools: "Canoas de madera de cedro, gaveras rectangulares y capacho de plátano",
-        description: "La miel ardiente se trasladaba a grandes canoas donde se batía manualmente con palas de madera para airearla e inducir la cristalización globular. Antes de solidificar, la pasta dorada se vaciaba en gaveras tabicadas. Tras enfriar, las panelas de libra y media quedaban listas para empacarse en hojas secas de plátano.",
-        archiveNote: "Norma de Calidad Tradicional: Panela compacta, tonalidad ámbar cobrizo y textura quebradiza al corte, distintiva del Valle de Guatiguará.",
-      },
-    ],
-    decadenceAnalysis: {
-      stat: "-88%",
-      statLabel: "Pérdida de Trapiches Tradicionales (1960–2010)",
-      headline: "La Implacable Expansión Urbana sobre el Verde Cañaduzal",
-      paragraph1: "A partir del último tercio del siglo XX, la competitividad de los trapiches santandereanos se vio doblegada por la mecanización a escala industrial en la Hoya del Río Suárez y los grandes ingenios del Valle del Cauca. No obstante, el golpe decisivo sobre Piedecuesta no provino del mercado agropecuario, sino de la voracidad inmobiliaria.",
-      paragraph2: "La pavimentación de la autopista y la expansión del conurbano metropolitano transformaron los centenarios sembradíos de Guatiguará y La Argentina en urbanizaciones residenciales, condominios campestres y bodegas comerciales. Donde antaño se elevaba el vapor perfumado a melaza, hoy se extienden arterias de asfalto que borraron las acequias virreinales y confinaron la labor panelera a una estampa remota del recuerdo.",
-    },
-    plates: [
-      {
-        id: "fig-a",
-        label: "Figura A",
-        title: "La Casona de Hacienda",
-        description: "Estructura solariega de tapia pisada, teja de barro cocido y ramada abierta de molienda en Guatiguará.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBvVxiwDTE2MpodmrWsRiCVsQNy7zwwQvmiXcCN7YaT2nTw8fZSggtB2IlgG-6bkO2P0eYz633SipIT6GnN47MRjUHAF7rMdXa9I5nzOIyastnuluI1HC2BGH3UhthEeJSYzBuIyBp_an7r6ZqlFjGgRUjIAidkcIr_RSt1wPK1qfzeXtQHXotC3TaTQvk4eg6_FZVhmhbEdtI2Ecc4XXp63O78FD933ann-x9ugMRUVJXxRc6LpfY",
-      },
-      {
-        id: "fig-b",
-        label: "Figura B",
-        title: "Molienda de Tracción Animal",
-        description: "Mulas girando sobre el eje del trapiche exprimiendo tallos gruesos hacia los canales de decantación.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmmHbxIdhNG8BSpaIAkvKc5Wx8UF4ma4kmA_hODMYAzOCvDsoy9RPQj_t2g1BM03iye_G_48Z27VzwoMgANt0eqexGyM_DpbhuSWmh6LgG0ra3SaAhtXNRX9uKdM9vO1-6J3BBRfEHSfz6KAcp4A5IcUmqTzjoJG0t0lpfLaQLkv4Cfz0WcsUKu4UrgYen41mxDSAWqJiu3F2z_C8VpifRQFb5Oc2suoUh0j3WFM59TOJpAc8HZ0U",
-      },
-      {
-        id: "fig-c",
-        label: "Figura C",
-        title: "Humareda del Bagazo",
-        description: "Chimeneas cónicas de ladrillo expulsando humo dulce y vapor denso sobre el horizonte piedecuestano.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCngLNp6TMk6z6I9FViB9JiFf3nRQffdNswI2jJTtWAUYEcD7DwNb6ONknmtAXvJeypN1yev-sAcWyWdbdsSPFMqoIhs_VfKCsC__Br1QrzSxKHxzt1ZEWT2Xy_w83Xf-Fb9zst8E4CmeBFECDGqxKMT-AQZ3lN0O-vvHaerhU6V6k2XL57zcQLDHxt7yvkyGH74UZIv69wXmjv4slqNqJvVSbFCA-aL_PGsBcQJPTDmTXwVSHDupY",
-      },
-    ],
+        number: "5",
+        title: "Batido y Gaveras",
+        desc: "Cristalización inducida en mesas y canoas de madera de cedro mediante batido manual con palas hasta alcanzar el 'grano' perfecto antes del moldeo.",
+        detail: "La melaza espesa se vertía en gaveras tabicadas para solidificar en pastillas rectangulares que luego eran empacadas en capacho seco de plátano."
+      }
+    ]
   },
 
-  funeraria: {
-    chapterNumber: "Capítulo II",
-    badge: "Tomo II · Biografías Urbanas y Oficios de Piedecuesta",
+  capitulo2: {
+    id: "decadencia-trapiches",
+    number: "Capítulo II",
+    title: "La Anatomía de la Crisis Panelera",
+    subtitle: "El Ocaso de los Cañaduzales: ¿Por qué Desaparecieron?",
+    intro: "Durante más de dos siglos, Piedecuesta congregó más de sesenta moliendas activas a lo largo de Guatiguará. No obstante, el paisaje agroindustrial sucumbió ante una convergencia de fuerzas estructurales que desmantelaron el modelo productivo tradicional:",
+    factors: [
+      {
+        letter: "A",
+        title: "Urbanización Acelerada",
+        summary: "Decretos metropolitanos y presión inmobiliaria sobre el suelo fértil.",
+        explanation: "La pavimentación de la autopista y la expansión conurbada del área metropolitana de Bucaramanga provocaron la reconversión masiva del uso del suelo. Las centenarias haciendas de Guatiguará y La Argentina fueron parceladas para la construcción de conjuntos residenciales cerrados, bodegas comerciales y parques industriales, sepultando las acequias coloniales bajo asfalto."
+      },
+      {
+        letter: "B",
+        title: "Decretos Sanitarios Inalcanzables",
+        summary: "Exigencias tecnocráticas de infraestructura y estandarización.",
+        explanation: "La promulgación de normas sanitarias de orden nacional (resoluciones tipo INVIMA) impuso requisitos de plantas en acero inoxidable, cuartos sellados de moldeo y trazabilidad industrial. Estas exigencias resultaron económica y técnicamente imposibles de financiar para los trapiches familiares campesinos, acelerando la clausura forzada de decenas de unidades tradicionales."
+      },
+      {
+        letter: "C",
+        title: "Cambio en el Consumo de Azúcar",
+        summary: "Declive de la aguapanela frente a bebidas procesadas y nuevas dietas.",
+        explanation: "La aguapanela, que históricamente constituyó la fuente calórica y el desayuno predilecto de las familias obreras y campesinas, fue desplazada paulatinamente en el último tercio del siglo XX por gaseosas embotelladas, refrescos sintéticos y la transición cultural hacia dietas de menor consumo energético tradicional en los hogares urbanizados."
+      },
+      {
+        letter: "D",
+        title: "Transición Tabacalera y Fabriquines",
+        summary: "Éxodo de la mano de obra rural hacia los talleres urbanos de cigarros.",
+        explanation: "El auge de la manufactura del tabaco en el casco urbano de Piedecuesta captó de manera masiva la fuerza laboral de las vegas. Los jornales en los 'fabriquines' de cigarros y torceduría ofrecían condiciones de trabajo bajo techo y dinamismo mercantil, drenando a los cañaduzales de sus arrieros, cortadores y fogoneros indispensables."
+      }
+    ]
+  },
+
+  capitulo3: {
+    id: "funeraria-gomez",
+    number: "Capítulo III",
     title: "Más Allá del Duelo",
-    subtitle: "La Funeraria David Gómez Barrera: Testigo Silencioso de la Dignidad Humana",
-    originalAddress: "Carrera 8 #9-01 (Centro Histórico de Piedecuesta)",
-    founder: "Don David Gómez Barrera",
-    mainText: [
-      "En una época donde la muerte en las villas santandereanas se gestionaba de manera improvisada y precaria en las propias salas de las casas coloniales —con sábanas almidonadas y velas de cebo—, Don David Gómez Barrera tuvo la lucidez y el compromiso cívico de fundar uno de los primeros servicios exequiales formalmente organizados del municipio.",
-      "Gómez Barrera no concebía su oficio como un emprendimiento mercantil, sino como un ministerio moral de solidaridad. En un Piedecuesta de calles empedradas donde cada vecino era conocido por su nombre de pila, linaje y oficio, Don David dispensaba el mismo esmero reverente al potentado terrateniente que al campesino jornalero de las veredas más apartadas.",
-      "En su taller de carpintería tradicional elaboraba artesanalmente los féretros empleando finas maderas locales como cedro real, caoba y pino resinado. Cuando una familia humilde no disponía de recursos, Don David fiaba a plazos sin intereses o donaba el ataúd en silencio, asegurando que ningún hijo de Piedecuesta fuera despedido sin un descanso honorable.",
-    ],
-    churchTransition: {
-      title: "La Transición a «Funeraria San Francisco Javier»",
-      explanation: "Con el transcurso de las décadas y la profesionalización del sector, la firma adoptó el nombre de Funeraria San Francisco Javier. Lejos de constituir un mero cambio corporativo, este rebautizo buscó anclarse a la devoción patronal de la Parroquia San Francisco Javier, erigida en 1776 como piedra fundacional de Piedecuesta. El duelo de las familias quedó así cobijado bajo los 250 años de tradición espiritual y comunitaria del municipio.",
-    },
-    parishExtract: {
-      folioNumber: "Folio Exequial Nº 412",
-      book: "Libro de Difuntos · Parroquia San Francisco Javier",
-      text: "«...Habiéndosele administrado los Santos Sacramentos al finado maestro carpintero de moliendas, fue dispuesto con cristiana solemnidad en ataúd de cedro pulido por el señor David Gómez B., sin cobro de obvenciones ni gravamen alguno por hallarse su familia en suma pobreza en la vereda El Guamo...»",
-      date: "Asiento Parroquial de 1954",
-    },
-    valuesList: [
-      {
-        title: "Carpintería de Raíz",
-        desc: "Féretros ensamblados a mano en cedro, nogal y pino sin clavos a la vista.",
-      },
-      {
-        title: "Dignidad Universal",
-        desc: "Idéntica solemnidad y respeto para el hacendado y el campesino de vereda.",
-      },
-      {
-        title: "Arraigo Parroquial",
-        desc: "Vínculo directo con la parroquia fundacional de 1776 y el cementerio católico.",
-      },
-    ],
+    subtitle: "La Funeraria David Gómez: De la Solidaridad Comunitaria a la Empresa Privada",
+    address: "Carrera 8 #9-01 (Casco Fundacional de Piedecuesta)",
+    contextParagraph1: "En los albores y mediados del siglo XX en Piedecuesta, la partida de un ser querido se resolvía de forma íntima y comunitaria en la sala de las viviendas familiares: velaciones con velas de sebo, sábanas almidonadas y el auxilio espontáneo del vecindario. Frente a este panorama desprovisto de infraestructura, Don David Gómez Barrera fundó en la Carrera 8 #9-01 uno de los primeros despachos exequiales formalizados del municipio.",
+    contextParagraph2: "Don David conjugó su maestría de carpintero artesanal con un profundo sentido de solidaridad humana. En su taller labraba féretros en cedro, pino y nogal, dispensando idéntico respeto al vecino acomodado que al campesino de la vereda El Guamo, fiando ataúdes sin recargo alguno o donándolos a familias sin sustento para asegurar un entierro digno.",
+    transitionTitle: "La Transición a San Francisco Javier",
+    transitionExplanation: "Con el relevo generacional y la profesionalización del sector, la firma adoptó el nombre de Funeraria San Francisco Javier. Esta mutación de razón social representó una deliberada estrategia de anclaje simbólico con la parroquia matriz que dio origen al curato de Piedecuesta en 1776, imbricando el servicio funerario en la devoción patronal que aglutinaba los 250 años de historia religiosa del municipio.",
+    parishExtract: "«...Habiéndosele administrado los Santos Sacramentos al finado maestro carpintero de moliendas, fue dispuesto con cristiana solemnidad en ataúd de cedro pulido por el señor David Gómez B., sin cobro de obvenciones por hallarse su familia en suma pobreza...» — Folio 412, Libro de Difuntos, Parroquia San Francisco Javier."
   },
 
-  testimonios: {
-    chapterNumber: "Capítulo III",
-    badge: "Tomo III · Expediente de Campo & Memoria Oral",
-    title: "Expediente de Campo: Voces y Resistencia",
-    subtitle: "Declaraciones Notariales de los Custodios de la Memoria Piedecuestana",
-    dateOfFieldwork: "18 de Mayo de 2026",
-    location: "Casco Histórico y Parque Principal de Piedecuesta",
-    criticalSynthesis: {
-      title: "El Peligro de la Privatización de la Memoria",
-      text: "Cuando las instituciones históricas y los oficios fundacionales pasan a manos exclusivamente privadas o son absorbidos por conglomerados anónimos, la memoria comunal sufre un proceso de privatización y subsecuente borrado. Los archivos se vuelven inaccesibles y las nuevas generaciones crecen sin comprender que bajo el cemento de los centros comerciales late la sangre y el esfuerzo de quienes construyeron la ciudad.",
-    },
-    files: [
+  capitulo4: {
+    id: "testimonios",
+    number: "Capítulo IV",
+    title: "Expediente de Campo y Archivo Oral",
+    subtitle: "Voces y Declaraciones del 18 de Mayo de 2026",
+    quotes: [
       {
-        id: "ficha-01",
-        recordNumber: "EXP-ORAL-001/2026",
         witness: "Don Ramiro",
         age: "78 años",
         role: "Hijo de maestro pailero y antiguo arriero de Guatiguará",
-        date: "18 de mayo de 2026",
-        stamp: "DECLARACIÓN TESTIMONIAL NOTARIADA",
-        keyQuote: "La funeraria no desapareció, cambió de razón social... al ser privada, la historia no se divulga; y con los trapiches pasó igual: borraron la caña para meter concreto.",
-        fullStatement: "«Los muchachos de ahora creen que Piedecuesta nació con los centros comerciales y los conjuntos de torres cerradas. No saben que sobre cada piso de baldosín fino que pisan en Guatiguará cayó el sudor de hombres que se quemaban el pecho en las hornallas para endulzar a media Colombia. Y don David Gómez era como de la familia de uno. La gente piensa que su funeraria se acabó, pero no: simplemente le cambiaron la razón social y la privatizaron. Al volverse privado todo, la historia ya no se divulga en las escuelas y se va perdiendo el alma del pueblo.»",
-        notarialObservations: "El declarante conserva lúcida memoria de los caminos de herradura y los jornales de 1958. Aporta detalles sobre la compra de madera en el taller de Don David.",
+        statement: "La empresa es privada y por esa razón la información histórica detallada no se divulga fácilmente.",
+        extendedContext: "Don Ramiro relata cómo los procesos de privatización desvincularon a las familias fundadoras de sus propios archivos orales: 'Al volverse todo privado, las nuevas generaciones creen que los servicios y los edificios siempre fueron negocios fríos, ignorando que detrás de cada nombre como el de don David Gómez hubo hombres que sirvieron al pueblo en sus horas más amargas sin pedir nada a cambio'."
       },
       {
-        id: "ficha-02",
-        recordNumber: "EXP-ORAL-002/2026",
         witness: "Doña Sofía",
         age: "82 años",
-        role: "Rezandera tradicional y vecina centenaria del Parque Principal",
-        date: "18 de mayo de 2026",
-        stamp: "TESTIMONIO DE ARCHIVO VIVO",
-        keyQuote: "El vínculo con la Parroquia San Francisco Javier y la fe del pueblo... Don David no dejaba a ningún muerto botado, su memoria vale más que cualquier medalla.",
-        fullStatement: "«Don David Gómez no dejaba a ningún muerto botado. Si no había plata en la casa del difunto, él mismo iba, buscaba las tablas de cedro más bonitas y se sentaba a rezarle el rosario a las viudas con un pocillo de café bien caliente. Luego, cuando le pusieron el nombre de San Francisco Javier, fue para juntar esa obra con la fe que nos fundó en 1776. La memoria de esa gente honrada y caritativa vale más que cualquier medalla o estatua que pongan los políticos.»",
-        notarialObservations: "Testimonio corroborado mediante cruce con las partidas de defunción del archivo parroquial de San Francisco Javier.",
-      },
+        role: "Vecina centenaria del sector parroquial",
+        statement: "El nombre conecta con el origen mismo del asentamiento de Piedecuesta.",
+        extendedContext: "Doña Sofía recuerda cómo la adopción del nombre de San Francisco Javier mantuvo viva la fe comunitaria: 'Ponerle el nombre del santo patrón fue la manera de que la gente sintiera que el difunto no iba a parar a manos de extraños, sino que descansaba bajo la misma bendición que levantó este pueblo desde 1776'."
+      }
     ],
+    criticalThesis: {
+      headline: "La Privatización del Pasado y el Peligro del Olvido Institucional",
+      text: "La memoria social de los municipios corre el severo peligro de disolverse cuando los archivos cotidianos y los oficios fundacionales quedan confinados al dominio estrictamente privado o son absorbidos por firmas anónimas. Sin repositorios públicos escolares y comunitarios que rescaten estas memorias, los artífices del paisaje agrario y los benefactores de la dignidad comunal son borrados de la narrativa oficial, dejando a la juventud sin raíces históricas ante el avance del concreto."
+    }
   },
 
   colofon: {
-    title: "Colofón & Ficha Técnica",
-    subtitle: "Créditos Académicos, Proyecto ABP y Fuentes de Archivo",
+    id: "creditos",
+    title: "Colofón & Créditos Académicos",
     institution: "Colegio Municipal Carlos Vicente Rey",
-    gradeArea: "Ciencias Sociales — Grado 11° · Proyecto ABP (Aprendizaje Basado en Problemas)",
-    municipality: "Piedecuesta, Santander, Colombia",
-    academicAdvisor: "Deiby Duvan Galeano Mendoza",
-    researchGroup: "Semillero Estudiantil de Memoria y Patrimonio Comunal (Promoción 2026)",
+    grade: "Ciencias Sociales | Grado 11° · Proyecto de Aprendizaje Basado en Problemas (ABP)",
+    advisor: "Docente Deiby Duvan Galeano Mendoza",
+    municipality: "Piedecuesta, Santander, Colombia (2026)",
     sources: [
       {
-        type: "Fuente Primaria",
-        detail: "Entrevistas de campo presenciales grabadas el 18 de mayo de 2026 en el casco urbano de Piedecuesta con Don Ramiro y Doña Sofía. Cartografía comunal de Guatiguará y testimonios orales de familias molienderas.",
+        type: "Fuente Secundaria Canónica",
+        citation: "Investigación y obra historiográfica «Historias de Piedecuesta (1776–2026)» del historiador Dr. Luis Rubén Pérez Pinzón (Universidad Industrial de Santander, UIS)."
       },
       {
-        type: "Fuente Secundaria Historiográfica",
-        detail: "Obra canónica «Historias de Piedecuesta (1776–2026)» e investigaciones documentales del Dr. Luis Rubén Pérez Pinzón (Universidad Industrial de Santander).",
+        type: "Fuente Primaria Etnográfica",
+        citation: "Trabajo de campo escolar, entrevistas presenciales de historia oral realizadas el 18 de mayo de 2026 en el casco urbano de Piedecuesta (testimonios de Don Ramiro y Doña Sofía)."
       },
       {
         type: "Archivos Parroquiales y Notariales",
-        detail: "Libros de enterramientos y partidas de defunción de la Parroquia San Francisco Javier (fondos 1894–1960); actas del Archivo Notarial Municipal de Piedecuesta.",
-      },
+        citation: "Registros capitulares del fondo notarial de Piedecuesta y libros de enterramientos de la Parroquia San Francisco Javier (fondos 1894–1960)."
+      }
     ],
-    thesisConclusion: "La historia de los pueblos no puede reducirse al bronce inanimado de los héroes militares ni al articulado estéril de los decretos gubernamentales. El alma profunda de Piedecuesta sobrevive en el calor residual de las hornallas de Guatiguará y en la caridad silente de artesanos como Don David Gómez Barrera. Si las nuevas generaciones olvidan este legado, la ciudad se convertirá en un mero dormitorio sin identidad ni destino.",
-    latinClosing: "Laus Deo · Impreso en Piedecuesta para la perpetuidad de la memoria y la dignidad de sus oficios · MMXXVI",
+    closingNote: "Laus Deo · Investigación escolar de memoria local realizada en Piedecuesta para la dignificación de sus oficios y la preservación de su patrimonio · MMXXVI"
   },
 
   navigation: [
-    { label: "Portada", href: "#inicio" },
-    { label: "Cap. I: Trapiches", href: "#trapiches" },
-    { label: "Cap. II: Funeraria Gómez", href: "#funeraria" },
-    { label: "Cap. III: Testimonios", href: "#testimonios" },
-    { label: "Colofón & Fuentes", href: "#colofon" },
-  ],
+    { id: "inicio", label: "Portada" },
+    { id: "origen-azucar", label: "I. El Azúcar" },
+    { id: "decadencia-trapiches", label: "II. La Crisis" },
+    { id: "funeraria-gomez", label: "III. Funeraria Gómez" },
+    { id: "testimonios", label: "IV. Archivo Oral" },
+    { id: "creditos", label: "Colofón" }
+  ]
 };

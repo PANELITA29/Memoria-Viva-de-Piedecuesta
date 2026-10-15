@@ -1,34 +1,38 @@
 import React from 'react';
 import { NavbarBook } from './components/NavbarBook';
 import { HeroCover } from './components/HeroCover';
-import { TrapichesSection } from './components/TrapichesSection';
+import { OrigenAzucarSection } from './components/OrigenAzucarSection';
+import { CrisisTrapichesSection } from './components/CrisisTrapichesSection';
 import { FunerariaSection } from './components/FunerariaSection';
-import { TestimoniosModal } from './components/TestimoniosModal';
-import { TesisFooter } from './components/TesisFooter';
+import { TestimoniosSection } from './components/TestimoniosSection';
+import { CreditosSection } from './components/CreditosSection';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#F4EFE6] text-[#2C221E] font-book selection:bg-[#B89758]/30 selection:text-[#1F3D2B] bg-parchment-texture relative">
+    <div className="min-h-screen bg-[#F3EBDD] text-[#3D2D24] font-book selection:bg-[#B39352]/30 selection:text-[#1F3D2B] bg-parchment-texture relative">
       {/* Barra Fija Tipo Cinta Marcapáginas */}
       <NavbarBook />
 
-      {/* Contenido Principal de la SPA One-Page */}
+      {/* Contenido Editorial del Tomo Histórico */}
       <main className="w-full">
-        {/* Portada del Tomo */}
+        {/* Portada y Frontispicio (#inicio) */}
         <HeroCover />
 
-        {/* Capítulo I: El Valle de la Caña Dulce y Ciclo de Molienda */}
-        <TrapichesSection />
+        {/* Capítulo I: La Paradoja del Azúcar en Piedecuesta (#origen-azucar) */}
+        <OrigenAzucarSection />
 
-        {/* Capítulo II: Más Allá del Duelo (Funeraria David Gómez) */}
+        {/* Capítulo II: La Anatomía de la Crisis Panelera (#decadencia-trapiches) */}
+        <CrisisTrapichesSection />
+
+        {/* Capítulo III: Más Allá del Duelo - Funeraria David Gómez (#funeraria-gomez) */}
         <FunerariaSection />
 
-        {/* Capítulo III: Expediente de Campo y Fichas Notariales */}
-        <TestimoniosModal />
+        {/* Capítulo IV: Expediente de Campo y Archivo Oral (#testimonios) */}
+        <TestimoniosSection />
       </main>
 
-      {/* Colofón, Tesis del ABP y Fuentes de Archivo */}
-      <TesisFooter />
+      {/* Colofón & Créditos Académicos (#creditos) */}
+      <CreditosSection />
     </div>
   );
 }
