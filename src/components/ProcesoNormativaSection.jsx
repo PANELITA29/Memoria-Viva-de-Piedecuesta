@@ -61,7 +61,7 @@ export const ProcesoNormativaSection = () => {
             </div>
           </div>
           <span className="bg-[#1F3D2B] text-[#B89758] px-3 py-1 rounded text-[11px] font-serif font-bold uppercase tracking-wider hidden sm:inline-block">
-            Páginas 93 a 95
+            Léxico Virreinal
           </span>
         </div>
 

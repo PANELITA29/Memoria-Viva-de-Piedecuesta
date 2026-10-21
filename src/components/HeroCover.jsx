@@ -62,7 +62,7 @@ export const HeroCover = () => {
 
           {/* Mención historiográfica rigurosa */}
           <p className="text-xs sm:text-sm text-[#362419] italic max-w-2xl mb-8 leading-normal">
-            Fundamentado en la investigación documental del historiador <strong>{projectMeta.historian}</strong> en su obra <em>«Historias de Piedecuesta (1776–2026)»</em> ({projectMeta.bookPages}) y el ensayo de historia oral del <strong>{projectMeta.institution}</strong>.
+            Fundamentado en la investigación documental del historiador <strong>{projectMeta.historian}</strong> en su obra <em>«Historias de Piedecuesta (1776–2026)»</em> y el ensayo de historia oral del <strong>{projectMeta.institution}</strong>.
           </p>
 
           {/* Botón de Entrada Editorial */}

@@ -13,7 +13,6 @@ export const historyData = {
     subtitle: "De la colonización cañamelera de 1635 y los extintos panes de azúcar, al patrimonio exequial de David Gómez Barrera",
     photoCredit: "Liévano O. Fotógrafo",
     historian: "Luis Rubén Pérez Pinzón",
-    bookPages: "Páginas 91 a 95",
   },
 
   images: {
@@ -85,7 +84,7 @@ export const historyData = {
 
   seccion3: {
     id: "pan-de-azucar",
-    badge: "Sección 3 · Historiografía Económica UIS (Págs. 92–94)",
+    badge: "Sección 3 · Historiografía Económica UIS",
     title: "Del \"Pan de Azúcar\" a la Panela",
     subtitle: "Los estudios de Pierre Raymond (1980–1988) sobre aparcería, Coopanelas y la Empresa Licorera de Santander",
     raymondContext: {
@@ -159,7 +158,7 @@ export const historyData = {
 
   seccion4: {
     id: "proceso-normativa",
-    badge: "Sección 4 · Lexicografía, Molienda y Modernización (Págs. 93–95)",
+    badge: "Sección 4 · Lexicografía, Molienda y Modernización",
     title: "El Proceso Técnico, Léxico y Normativa Moderna",
     subtitle: "Glosario filológico de raíces atlánticas, los 8 subprocesos de la hornilla y las exigencias de higiene (2011–2015)",
     glossary: {
@@ -248,7 +247,7 @@ export const historyData = {
     },
     modernImpact: {
       statsYear: "2015",
-      title: "Panel de Datos e Impacto Moderno (Pág. 95)",
+      title: "Panel de Datos e Impacto Moderno",
       stats: [
         {
           value: "73%",
@@ -319,7 +318,7 @@ export const historyData = {
     sourcesList: [
       {
         type: "Obra Historiográfica Canónica",
-        citation: "Pérez Pinzón, Luis Rubén. (2026). Historias de Piedecuesta (1776–2026). Páginas 91 a 95. Universidad Industrial de Santander (UIS).",
+        citation: "Pérez Pinzón, Luis Rubén. (2026). Historias de Piedecuesta (1776–2026). Universidad Industrial de Santander (UIS).",
       },
       {
         type: "Fondo Documental Colonial",
