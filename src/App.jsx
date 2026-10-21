@@ -9,12 +9,12 @@ import { ColofonSection } from './components/ColofonSection';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#EFE6D8] text-[#23170F] font-book selection:bg-[#B89758]/30 selection:text-[#1F3D2B] bg-parchment-texture relative">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#EFE6D8] text-[#23170F] font-book selection:bg-[#B89758]/30 selection:text-[#1F3D2B] bg-parchment-texture relative">
       {/* Barra Fija Tipo Cinta Marcapáginas */}
       <NavbarBook />
 
       {/* Contenido Editorial del Tomo Histórico (One-Page) */}
-      <main className="w-full">
+      <main className="w-full overflow-x-hidden">
         {/* SECCIÓN 1: Portada y Hero (#inicio) */}
         <HeroCover />
 
