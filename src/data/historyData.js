@@ -37,7 +37,7 @@ export const historyData = {
     id: "origenes-1635",
     badge: "Sección 2 · Documento Notarial y Poblamiento",
     title: "Orígenes Coloniales y la Colonización Cañamelera",
-    subtitle: "El valle del río Lato, los encomenderos de Pamplona y la fundación de las haciendas de molienda (Págs. 91–92)",
+    subtitle: "El valle del río Lato, los encomenderos de Pamplona y la fundación de las haciendas de molienda",
     intro: "El poblamiento de las vegas bajas de la cordillera oriental respondió a la búsqueda incesante de riqueza aurífera y a la posterior necesidad de consolidar estancias agrícolas autosuficientes capaces de alimentar a las cuadrillas de explotación minera.",
     hitos: [
       {

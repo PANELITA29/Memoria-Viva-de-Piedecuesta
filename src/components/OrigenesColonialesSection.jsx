@@ -39,7 +39,7 @@ export const OrigenesColonialesSection = () => {
         <div className="flex items-center justify-between mb-6">
           <h3 className="font-serif text-xl sm:text-2xl text-[#1F3D2B] font-bold flex items-center gap-2">
             <Calendar className="w-5 h-5 text-[#B89758]" />
-            <span>Hitos Cronológicos del Poblamiento Cañamelero (Págs. 91–92)</span>
+            <span>Hitos Cronológicos del Poblamiento Cañamelero</span>
           </h3>
           <span className="text-xs font-serif text-[#362419] italic hidden sm:inline">
             Selecciona un hito para inspeccionar el folio documental
