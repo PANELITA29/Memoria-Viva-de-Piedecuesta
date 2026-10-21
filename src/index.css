@@ -6,16 +6,16 @@
   html {
     scroll-behavior: smooth;
     font-family: 'EB Garamond', Georgia, serif;
-    background-color: #F3EBDD;
-    color: #3D2D24;
+    background-color: #EFE6D8;
+    color: #23170F;
   }
 
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #F3EBDD;
-    color: #3D2D24;
+    background-color: #EFE6D8;
+    color: #23170F;
   }
 
   #root {
@@ -31,10 +31,10 @@
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #E8DEC8;
+    background: #E5D9C5;
   }
   ::-webkit-scrollbar-thumb {
-    background: #B39352;
+    background: #B89758;
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
@@ -46,35 +46,35 @@
 .drop-cap::first-letter {
   float: left;
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 3.75rem;
-  line-height: 0.8;
+  font-size: 3.5rem;
+  line-height: 0.85;
   padding-top: 4px;
-  padding-right: 10px;
+  padding-right: 12px;
   padding-bottom: 2px;
   color: #1F3D2B;
   font-weight: 700;
 }
 
-/* Double Hairline Ornamental Book Border */
-.border-double-filete {
-  border: 1px solid #B39352;
-  position: relative;
-}
-.border-double-filete::before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border: 1px solid rgba(179, 147, 82, 0.45);
-  pointer-events: none;
+/* Double Ornamental Border in Antique Gold */
+.border-antique-double {
+  border: 4px double #B89758;
 }
 
-/* Parchment Texture Gradient */
+/* Cane & Parchment Texture Background */
 .bg-parchment-texture {
-  background-color: #F3EBDD;
+  background-color: #EFE6D8;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(179, 147, 82, 0.06) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(31, 61, 43, 0.04) 0%, transparent 40%);
+    radial-gradient(circle at 12% 18%, rgba(184, 151, 88, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(31, 61, 43, 0.06) 0%, transparent 50%),
+    linear-gradient(to bottom, rgba(239, 230, 216, 0.96), rgba(229, 217, 197, 0.98));
+}
+
+/* Sepia image effect with archival grain */
+.photo-archive {
+  filter: sepia(0.65) contrast(1.1) brightness(0.95);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.photo-archive:hover {
+  filter: sepia(0.3) contrast(1.05) brightness(1);
 }

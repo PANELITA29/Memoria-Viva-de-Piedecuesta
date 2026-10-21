@@ -1,38 +1,38 @@
 import React from 'react';
 import { NavbarBook } from './components/NavbarBook';
 import { HeroCover } from './components/HeroCover';
-import { OrigenAzucarSection } from './components/OrigenAzucarSection';
-import { CrisisTrapichesSection } from './components/CrisisTrapichesSection';
-import { FunerariaSection } from './components/FunerariaSection';
-import { TestimoniosSection } from './components/TestimoniosSection';
-import { CreditosSection } from './components/CreditosSection';
+import { OrigenesColonialesSection } from './components/OrigenesColonialesSection';
+import { PanDeAzucarSection } from './components/PanDeAzucarSection';
+import { ProcesoNormativaSection } from './components/ProcesoNormativaSection';
+import { FunerariaMemoriaSection } from './components/FunerariaMemoriaSection';
+import { ColofonSection } from './components/ColofonSection';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#F3EBDD] text-[#3D2D24] font-book selection:bg-[#B39352]/30 selection:text-[#1F3D2B] bg-parchment-texture relative">
+    <div className="min-h-screen bg-[#EFE6D8] text-[#23170F] font-book selection:bg-[#B89758]/30 selection:text-[#1F3D2B] bg-parchment-texture relative">
       {/* Barra Fija Tipo Cinta Marcapáginas */}
       <NavbarBook />
 
-      {/* Contenido Editorial del Tomo Histórico */}
+      {/* Contenido Editorial del Tomo Histórico (One-Page) */}
       <main className="w-full">
-        {/* Portada y Frontispicio (#inicio) */}
+        {/* SECCIÓN 1: Portada y Hero (#inicio) */}
         <HeroCover />
 
-        {/* Capítulo I: La Paradoja del Azúcar en Piedecuesta (#origen-azucar) */}
-        <OrigenAzucarSection />
+        {/* SECCIÓN 2: Orígenes Coloniales y la Colonización Cañamelera (#origenes-1635) */}
+        <OrigenesColonialesSection />
 
-        {/* Capítulo II: La Anatomía de la Crisis Panelera (#decadencia-trapiches) */}
-        <CrisisTrapichesSection />
+        {/* SECCIÓN 3: Del "Pan de Azúcar" a la Panela (#pan-de-azucar) */}
+        <PanDeAzucarSection />
 
-        {/* Capítulo III: Más Allá del Duelo - Funeraria David Gómez (#funeraria-gomez) */}
-        <FunerariaSection />
+        {/* SECCIÓN 4: El Proceso Técnico, Léxico y Normativa Moderna (#proceso-normativa) */}
+        <ProcesoNormativaSection />
 
-        {/* Capítulo IV: Expediente de Campo y Archivo Oral (#testimonios) */}
-        <TestimoniosSection />
+        {/* SECCIÓN 5: Más Allá del Duelo — Funeraria David Gómez Barrera (#funeraria-memoria) */}
+        <FunerariaMemoriaSection />
       </main>
 
-      {/* Colofón & Créditos Académicos (#creditos) */}
-      <CreditosSection />
+      {/* SECCIÓN 6: Conclusión y Colofón Bibliográfico (#colofon) */}
+      <ColofonSection />
     </div>
   );
 }
